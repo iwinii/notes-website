@@ -75,4 +75,5 @@ def sign_up():
             flash('Account created for email:' + email + '!', category='success')
             return redirect(url_for('auth.login'))
 
+
     return render_template("signup.html", user=current_user)
