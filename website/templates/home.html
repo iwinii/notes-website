@@ -15,11 +15,11 @@
     </li>
     {% endfor %}
 </ul>
-<form method="POST">
+<form method="POST" id="add-note-form" >
     <textarea name="note" id="note" class="form-control"></textarea>
     <br />
     <div align="center">
-        <button type="submit" class="btn btn-primary">Add note</button>
+        <button type="submit" class="btn btn-primary" id="add-note-button">Add note</button>
     </div>
 </form>
 {% endblock %}

@@ -13,7 +13,9 @@ views = Blueprint('views', __name__)
 def home():
     if request.method == 'POST':
 
-        note = request.form.get('note')
+        # note = request.form.get('note')
+        data = json.loads(request.data)
+        note = data['note']
         if len(note) < 1:
             flash('Note is too short!', category='error')
 
